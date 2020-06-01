@@ -5,6 +5,8 @@ using System.Net;
 
 public class ClientHandle : MonoBehaviour
 {
+    float speed = 5f;
+    
     public static void Welcome(Packet _packet)
     {
         string _msg = _packet.ReadString();
@@ -32,10 +34,10 @@ public class ClientHandle : MonoBehaviour
         Vector3 _position = _packet.ReadVector3();
         if ((_id != client.instance.id))
         {
-            Debug.Log($"UDP Message from server: {_id} and new position x:{ _position.x}");
+            //Debug.Log($"UDP Message from server: {_id} and new position x:{ _position.x}");
             try
             {
-                GameManager.players[_id].transform.position = _position; //client改位置
+                GameManager.players[_id].transform.position = _position;
             }
             catch (KeyNotFoundException e)
             {

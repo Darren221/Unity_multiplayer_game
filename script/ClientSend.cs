@@ -32,14 +32,16 @@ public class ClientSend : MonoBehaviour
     {
         using (Packet _packet = new Packet((int)ClientPackets.playerMovement))
         {
-
-            _packet.Write(_input);
             if (client.instance.isConnected)
             {
-                Debug.Log($"Send local player position ({_input.x}, {_input.y}, {_input.z})");
+                _packet.Write(_input);
+                //Debug.Log($"Send local player position ({_input.x}, {_input.y}, {_input.z})");
                 _packet.Write(GameManager.players[client.instance.id].transform.rotation);
-
+                //Debug.Log(GameManager.players[client.instance.id].transform.rotation);
+                _packet.Write(GameManager.players[client.instance.id].transform.forward);
+                Debug.Log(GameManager.players[client.instance.id].transform.forward);
                 SendUDPData(_packet);
+                Debug.Log("send Data");
             }
         }
     }
