@@ -6,17 +6,20 @@ namespace gameserver
 {
     class GameLogic
     {
-        public static void Update() //更新每個client
+        public static void Update(int _id = 99)
         {
+            if (_id != 99){
             foreach (Client _client in Server.clients.Values)
             {
                 if (_client.player != null)
                 {
+                    
                     _client.player.Update();
                 }
             }
 
             ThreadManager.UpdateMain();
+            }
         }
     }
 }

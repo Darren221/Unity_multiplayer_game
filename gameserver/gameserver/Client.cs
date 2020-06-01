@@ -104,7 +104,7 @@ namespace gameserver
                         return true;
                     }
                 }
-                //this while loop means that received data ciontains another complete packet which we can handle
+
                 while (_packetLength > 0 && _packetLength <= receivedData.UnreadLength())
                 {
                     byte[] _packetBytes = receivedData.ReadBytes(_packetLength);
@@ -137,10 +137,10 @@ namespace gameserver
 
                 if (_packetLength <= 1)
                 {
-                    return true; //to reset received data 
+                    return true;
                 }
 
-                return false; //don't reset received data cuz there's a partial packet left in there
+                return false;
             }
         
             public void Disconnect()

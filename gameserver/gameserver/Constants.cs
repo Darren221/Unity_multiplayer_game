@@ -6,7 +6,7 @@ namespace gameserver
 {
     class Constants
     {
-        public const string serverIPaddress = "140.112.42.100";
+        public const string serverIPaddress = "127.0.0.1";
         public const int serverPort = 8888;
         public const int MaxPlayerNumber = 10;
         public const int TICKS_PER_SEC = 30;

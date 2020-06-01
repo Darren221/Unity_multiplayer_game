@@ -11,8 +11,10 @@ namespace gameserver
 
         public Vector3 position;
         public Quaternion rotation;
+        public Vector3 fwd;
+        
 
-        private float moveSpeed = 5f / Constants.TICKS_PER_SEC;
+        private float moveSpeed = 5f;
         private Vector3 inputs;
 
         public Player(int _id, string _username, Vector3 _spawnPosition)
@@ -28,6 +30,7 @@ namespace gameserver
         public void Update()
         {
             Vector2 _inputDirection = Vector2.Zero;
+            position += 5f * fwd;
             Move(_inputDirection);
         }
 
@@ -38,10 +41,13 @@ namespace gameserver
             ServerSend.PlayerRotation(this);
         }
 
-        public void SetInput(Vector3 _inputs, Quaternion _rotation)
+      public void SetInput(Vector3 _inputs, Quaternion _rotation, Vector3 _fwd)
+
         {
             inputs = _inputs;
             rotation = _rotation;
+            fwd = _fwd;
+            GameLogic.Update(this.id);
         }
     }
 }

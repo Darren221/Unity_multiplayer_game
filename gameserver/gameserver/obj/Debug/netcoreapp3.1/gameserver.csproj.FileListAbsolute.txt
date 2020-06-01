@@ -24,3 +24,16 @@ C:\Users\kart9\gameserver\gameserver\bin\Debug\netcoreapp3.1\gameserver.dll
 C:\Users\kart9\gameserver\gameserver\bin\Debug\netcoreapp3.1\gameserver.pdb
 C:\Users\kart9\gameserver\gameserver\obj\Debug\netcoreapp3.1\gameserver.genruntimeconfig.cache
 C:\Users\user\source\repos\gameserver\gameserver\obj\Debug\netcoreapp3.1\gameserver.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\bin\Debug\netcoreapp3.1\gameserver.exe
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\bin\Debug\netcoreapp3.1\gameserver.deps.json
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\bin\Debug\netcoreapp3.1\gameserver.runtimeconfig.json
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\bin\Debug\netcoreapp3.1\gameserver.runtimeconfig.dev.json
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\bin\Debug\netcoreapp3.1\gameserver.dll
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\bin\Debug\netcoreapp3.1\gameserver.pdb
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\obj\Debug\netcoreapp3.1\gameserver.csprojAssemblyReference.cache
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\obj\Debug\netcoreapp3.1\gameserver.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\obj\Debug\netcoreapp3.1\gameserver.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\obj\Debug\netcoreapp3.1\gameserver.AssemblyInfo.cs
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\obj\Debug\netcoreapp3.1\gameserver.dll
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\obj\Debug\netcoreapp3.1\gameserver.pdb
+C:\Users\User\OneDrive\桌面\gameserver\gameserver\gameserver\obj\Debug\netcoreapp3.1\gameserver.genruntimeconfig.cache

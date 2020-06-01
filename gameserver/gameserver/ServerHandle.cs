@@ -18,14 +18,16 @@ namespace gameserver
                 Console.WriteLine($"Player \"{_username}\" (ID: {_fromClient}) has assumed the wrong client ID ({_clientIdCheck})!");
             }
             Server.clients[_fromClient].SendIntoGame(_username);
+            
         }
 
         public static void PlayerMovement(int _fromClient, Packet _packet)
         {
             Vector3 _position = _packet.ReadVector3();
             Quaternion _rotation = _packet.ReadQuaternion();
-
-            Server.clients[_fromClient].player.SetInput(_position, _rotation); //記錄丟來的client, 將位置傳給別人
+            Vector3 _forward = _packet.ReadVector3();
+            Server.clients[_fromClient].player.SetInput(_position, _rotation, _forward);
+            //Server.clients[_fromClient].player.SetInput( _rotation);
 
         }
     }
